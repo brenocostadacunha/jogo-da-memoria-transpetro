@@ -1,0 +1,53 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "image": "/imgs/card1.png",
+      "text": "Inovação"
+    },
+    {
+      "id": 2,
+      "image": "/imgs/card2.png",
+      "text": "Centro de controle"
+    },
+    {
+      "id": 3,
+      "image": "/imgs/card3.png",
+      "text": "Trabalho em campo"
+    },
+    {
+      "id": 4,
+      "image": "/imgs/card4.png",
+      "text": "Concientização"
+    },
+    {
+      "id": 5,
+      "image": "/imgs/card5.png",
+      "text": "Tecnologia"
+    },
+    {
+      "id": 6,
+      "image": "/imgs/card6.png",
+      "text": "Trabalho em equipe"
+    },
+    {
+      "id": 7,
+      "image": "/imgs/card7.png",
+      "text": "Infraestrutura"
+    },
+    {
+      "id": 8,
+      "image": "/imgs/card8.png",
+      "text": "Sustentabilidade"
+    }
+  ],
+  "cardBack": {
+    "image": "/imgs/verso.png",
+    "text": ""
+  },
+  "gameSettings": {
+    "gridSize": 4,
+    "flipDelay": 1000,
+    "gameTime": 300
+  }
+}
