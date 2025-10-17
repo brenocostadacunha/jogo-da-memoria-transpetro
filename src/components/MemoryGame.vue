@@ -273,8 +273,8 @@ onUnmounted(() => {
   position: relative;
   width: 100%;
   aspect-ratio: 2.8;
-  background-size: 105%;
-  background-position: bottom;
+  background: no-repeat;
+  background-position: center top;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -309,7 +309,7 @@ onUnmounted(() => {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 22px 30px;
+  padding: 3rem;
   width: 100%;
   flex: 1 1 auto;
 }

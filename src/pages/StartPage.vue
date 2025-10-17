@@ -44,24 +44,25 @@ defineEmits(['start-game'])
   align-items: center;
   justify-content: center;
   background-position: center top;
+  background: no-repeat;
 }
 
 .content-section {
+  top: -3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 5rem;
+  gap: 7rem;
   position: relative;
   z-index: 5;
 }
 
 
 .description {
-  padding-top: 2rem;
   padding-inline: 5rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   color: #ffffff;
   margin: 0;

@@ -1,7 +1,7 @@
 <template>
   <div class="result-page">
     <!-- Header -->
-    <div class="header-section" style="background-image: url('/header-cartas.svg');">
+    <div class="header-section" style="background-image: url('/header-resultado.svg');">
     </div>
 
     <!-- Content -->
@@ -36,9 +36,7 @@ const emit = defineEmits(['return-to-start'])
 
 onMounted(() => {
   // Após 5 segundos, retornar para a página inicial
-  setTimeout(() => {
-    emit('return-to-start')
-  }, 5000)
+ 
 })
 </script>
 
@@ -66,6 +64,7 @@ onMounted(() => {
 }
 
 .content-section {
+  top: -3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

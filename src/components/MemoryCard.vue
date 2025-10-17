@@ -78,7 +78,7 @@ const handleClick = () => {
   height: 100%;
   backface-visibility: hidden;
   border-radius: 12px;
-  border: 0.3rem solid #FDC82F;
+  border: 0.4rem solid #FDC82F;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   background: white;
