@@ -129,7 +129,6 @@ const handleClick = () => {
   text-align: center;
   color: white;
   line-height: 1.2;
-  white-space: nowrap;
   hyphens: auto;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
   letter-spacing: 0.3px;

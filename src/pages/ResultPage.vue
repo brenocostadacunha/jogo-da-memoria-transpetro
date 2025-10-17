@@ -36,7 +36,9 @@ const emit = defineEmits(['return-to-start'])
 
 onMounted(() => {
   // Após 5 segundos, retornar para a página inicial
- 
+  setTimeout(() => {
+    emit('return-to-start')
+  }, 5000)
 })
 </script>
 
@@ -54,7 +56,7 @@ onMounted(() => {
 .header-section {
   position: relative;
   width: 100%;
-  aspect-ratio: 1.3;
+  aspect-ratio: 2;
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center top;
@@ -64,7 +66,6 @@ onMounted(() => {
 }
 
 .content-section {
-  top: -3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

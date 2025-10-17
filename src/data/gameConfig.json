@@ -3,42 +3,42 @@
     {
       "id": 1,
       "image": "/imgs/card1.png",
-      "text": "Inovação"
+      "text": "Centro de Controle"
     },
     {
       "id": 2,
       "image": "/imgs/card2.png",
-      "text": "Centro de controle"
+      "text": "CNCL"
     },
     {
       "id": 3,
       "image": "/imgs/card3.png",
-      "text": "Trabalho em campo"
+      "text": "Marco Delimitador"
     },
     {
       "id": 4,
       "image": "/imgs/card4.png",
-      "text": "Concientização"
+      "text": "Horta Comunitária"
     },
     {
       "id": 5,
       "image": "/imgs/card5.png",
-      "text": "Tecnologia"
+      "text": "Creduto"
     },
     {
       "id": 6,
       "image": "/imgs/card6.png",
-      "text": "Trabalho em equipe"
+      "text": "Somos Transpetro"
     },
     {
       "id": 7,
       "image": "/imgs/card7.png",
-      "text": "Infraestrutura"
+      "text": "Maior Terminal da América Latina"
     },
     {
       "id": 8,
       "image": "/imgs/card8.png",
-      "text": "Sustentabilidade"
+      "text": "Usinas Fotovotaicas"
     }
   ],
   "cardBack": {
