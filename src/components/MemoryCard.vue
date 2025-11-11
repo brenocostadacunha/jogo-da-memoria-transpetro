@@ -151,6 +151,21 @@ const handleClick = () => {
 
 }
 
+@media (max-width: 480px) {
+
+  .card-front,
+  .card-back{
+    border: 0.2rem solid #FDC82F;
+    border-radius: 0.5rem;
+  }
+
+  .card-text {
+    font-size: 0.38rem;
+    font-weight: 600;
+  }
+
+}
+
 
 
 </style>

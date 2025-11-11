@@ -137,6 +137,37 @@ defineEmits(['start-game'])
 
 }
 
+@media (min-width: 300px) and (max-width: 500px) {
+
+  .header-section{
+    flex: 1 1 auto;
+    background: url('/cel-imgs/header-memoria-cel.svg')  no-repeat center top;
+  }
+
+  .content-section{
+    top: -1.5rem;
+    gap: 4rem;
+  }
+
+  .footer-section{
+    background-image: url('/cel-imgs/footer-cel.svg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
+
+  .description{
+    padding-inline: 1.75rem;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+  }
+
+  .play-button{
+    font-size: 1.75rem;
+    padding: 14px 25px;
+  }
+
+}
+
 
 </style>
 

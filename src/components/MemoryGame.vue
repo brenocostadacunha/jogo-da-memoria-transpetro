@@ -383,51 +383,31 @@ onUnmounted(() => {
 
 @media (max-width: 480px) {
 
-  .header-art {
-    width: 98%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+  .header-hero {
+    background: url('/cel-imgs/header-cel.svg') no-repeat center top;
+    aspect-ratio: 1.72;
+
   }
 
   .timer-section {
-    padding: 10px 0;
+    top: -4.5rem;
+    margin-bottom: -6.5rem;
+    padding: 0;
   }
-  
+
   .timer-display {
-    font-size: clamp(15px, 4.2vw, 20px);
-    padding: 8px 18px;
-    min-width: 110px;
+    font-size: 2.25rem;
+    padding: 0.4rem 1.2rem;
   }
-  
+
   .game-board {
-    padding: 0 8px 10px;
+    padding: 0 0.3rem;
   }
-  
-  .cards-container {
-    max-width: 98%;
-    padding: 0 5px;
-  }
-  
   .cards-grid {
-    max-width: min(98vw, 400px);
+    gap: 0.7rem 0.87rem;
   }
-}
-
-/* Tablets em paisagem */
-@media (min-width: 769px) and (max-width: 1024px) {
 
 }
 
-/* Notebooks e Desktops */
-@media (min-width: 1025px) and (max-width: 1919px) {
 
-
-}
-
-@media (min-width: 1080px) and (min-height: 1920px) and (max-width: 1200px) {
-
-
-}
 </style>

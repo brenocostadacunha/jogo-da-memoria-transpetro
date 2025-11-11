@@ -6,17 +6,12 @@
 
     <!-- Content -->
     <div class="content-section">
-      <picture v-if="isWin">
-        <source
-            media="(min-width: 768px) and (max-width: 1024px)"
-            srcset="/ipad-imgs/venceu-ipad.svg"
-        />
         <img
+            v-if="isWin"
             src="/venceu.svg"
             alt="Você venceu!"
             class="result-image"
         />
-      </picture>
 
       <img 
         v-else 
@@ -42,9 +37,9 @@ const emit = defineEmits(['return-to-start'])
 
 onMounted(() => {
   // Após 5 segundos, retornar para a página inicial
- // setTimeout(() => {
-   // emit('return-to-start')
- // }, 5000)
+ setTimeout(() => {
+    emit('return-to-start')
+  }, 5000)
 })
 </script>
 
@@ -98,6 +93,10 @@ onMounted(() => {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
+  .content-section img {
+    aspect-ratio: 1.2;
+  }
+
   .header-section {
     background: url('/ipad-imgs/ipad-header-jogar.svg')  no-repeat center top;
     aspect-ratio: 2.5;
@@ -109,13 +108,17 @@ onMounted(() => {
 }
 
 @media (max-width: 480px) {
-  .result-image {
-    max-width: 95%;
-    max-height: 250px;
+  .content-section img {
+    aspect-ratio: 1.45;
   }
-  
-  .content-section {
-    padding: 1rem;
+
+  .header-section {
+    background: url('/cel-imgs/header-cel.svg')  no-repeat center top;
+    aspect-ratio: 1.7;
+  }
+
+  .footer-section {
+    background: url('/cel-imgs/footer-cel.svg') no-repeat center bottom
   }
 }
 </style>
