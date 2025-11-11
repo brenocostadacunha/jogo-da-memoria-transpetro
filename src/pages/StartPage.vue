@@ -1,7 +1,7 @@
 <template>
   <div class="start-page">
     <!-- Header -->
-    <div class="header-section" style="background-image: url('/header-jogar.svg');">
+    <div class="header-section">
     </div>
 
     <!-- Content -->
@@ -15,7 +15,7 @@
       </button>
     </div>
 
-    <div class="footer-section" style="background-image: url('/footer-jogar.svg');">
+    <div class="footer-section">
     </div>
   </div>
 </template>
@@ -43,8 +43,7 @@ defineEmits(['start-game'])
   display: flex;
   align-items: center;
   justify-content: center;
-  background-position: center top;
-  background: no-repeat;
+  background: url('/header-jogar.svg') no-repeat center top;
 }
 
 .content-section {
@@ -101,6 +100,41 @@ defineEmits(['start-game'])
   background-position: center bottom;
   background-repeat: no-repeat;
   flex-shrink: 0;
+  background-image: url('/footer-jogar.svg');
+}
+
+/* Responsividades */
+
+/* Estilos para telas de tablet (como iPads) */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .header-section{
+    aspect-ratio: 2;
+    flex: 1 1 auto;
+    background: url('/ipad-imgs/header-ipad.svg')  no-repeat center top;
+  }
+
+  .footer-section{
+    aspect-ratio: 2.2;
+    background-image: url('/ipad-imgs/footer-ipad.svg');
+  }
+
+  .content-section{
+    top: 1rem;
+    gap: 3rem;
+  }
+
+  .description{
+    padding-inline: 3rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+
+  .play-button{
+    font-size: 2.7rem;
+    padding: 18px 36px;
+  }
+
 }
 
 

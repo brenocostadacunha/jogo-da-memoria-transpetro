@@ -142,7 +142,14 @@ const handleClick = () => {
 .memory-card.matched .card-inner {
   transform: rotateY(180deg);
 }
+@media (min-width: 768px) and (max-width: 1024px) {
 
+  .card-text {
+    font-size: 0.625rem;
+    font-weight: 600;
+  }
+
+}
 
 
 

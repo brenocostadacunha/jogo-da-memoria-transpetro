@@ -1,17 +1,23 @@
 <template>
   <div class="result-page">
     <!-- Header -->
-    <div class="header-section" style="background-image: url('/header-resultado.svg');">
+    <div class="header-section">
     </div>
 
     <!-- Content -->
     <div class="content-section">
-      <img 
-        v-if="isWin" 
-        src="/venceu.svg" 
-        alt="Você venceu!" 
-        class="result-image"
-      />
+      <picture v-if="isWin">
+        <source
+            media="(min-width: 768px) and (max-width: 1024px)"
+            srcset="/ipad-imgs/venceu-ipad.svg"
+        />
+        <img
+            src="/venceu.svg"
+            alt="Você venceu!"
+            class="result-image"
+        />
+      </picture>
+
       <img 
         v-else 
         src="/perdeu.svg" 
@@ -20,7 +26,7 @@
       />
     </div>
 
-    <div class="footer-section" style="background-image: url('/footer-jogar.svg');">
+    <div class="footer-section">
     </div>
   </div>
 </template>
@@ -36,9 +42,9 @@ const emit = defineEmits(['return-to-start'])
 
 onMounted(() => {
   // Após 5 segundos, retornar para a página inicial
-  setTimeout(() => {
-    emit('return-to-start')
-  }, 5000)
+ // setTimeout(() => {
+   // emit('return-to-start')
+ // }, 5000)
 })
 </script>
 
@@ -58,11 +64,10 @@ onMounted(() => {
   width: 100%;
   aspect-ratio: 2;
   background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center top;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url('/header-resultado.svg') no-repeat center top;
 }
 
 .content-section {
@@ -87,15 +92,19 @@ onMounted(() => {
   width: 100%;
   aspect-ratio: 2.1;
   background-size: 100%;
-  background-position: center bottom;
-  background-repeat: no-repeat;
   flex-shrink: 0;
+  background: url('/footer-jogar.svg') no-repeat center bottom;
 }
 
-@media (max-width: 768px) {
-  .result-image {
-    max-width: 90%;
-    max-height: 300px;
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .header-section {
+    background: url('/ipad-imgs/ipad-header-jogar.svg')  no-repeat center top;
+    aspect-ratio: 2.5;
+  }
+
+  .footer-section {
+    background: url('/ipad-imgs/footer-ipad.svg') no-repeat center bottom
   }
 }
 

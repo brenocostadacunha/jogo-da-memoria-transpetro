@@ -1,6 +1,6 @@
 <template>
   <div class="memory-game">
-    <div class="header-hero" style="background-image: url('/header.svg');">
+    <div class="header-hero">
     </div>
 
     <!-- Timer -->
@@ -273,11 +273,10 @@ onUnmounted(() => {
   position: relative;
   width: 100%;
   aspect-ratio: 2.8;
-  background: no-repeat;
-  background-position: center top;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url('/header.svg') no-repeat center top;
 
 }
 
@@ -340,7 +339,7 @@ onUnmounted(() => {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #000000;
+  background: #008542;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -354,7 +353,31 @@ onUnmounted(() => {
 }
 
 /* Responsividade */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-hero {
+  background: url('/ipad-imgs/ipad-header-jogar.svg') no-repeat center top;
+
+  }
+
+  .game-board {
+    padding: 0 4rem;
+  }
+
+  .cards-grid {
+    gap: 1rem 2rem;
+  }
+
+  .timer-display {
+    font-size: 2.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .timer-section {
+    top: -6rem;
+    margin-bottom: -6rem;
+  }
+
+
 
 }
 
