@@ -37,9 +37,9 @@ const emit = defineEmits(['return-to-start'])
 
 onMounted(() => {
   // Após 5 segundos, retornar para a página inicial
- setTimeout(() => {
-    emit('return-to-start')
-  }, 5000)
+//  setTimeout(() => {
+//     emit('return-to-start')
+//   }, 5000)
 })
 </script>
 
@@ -89,6 +89,23 @@ onMounted(() => {
   background-size: 100%;
   flex-shrink: 0;
   background: url('/footer-jogar.svg') no-repeat center bottom;
+}
+
+
+@media (min-width: 1300px) and (max-width: 2000px) {
+  .content-section img {
+    aspect-ratio: 0.9;
+  }
+
+  .header-section {
+    background: url('/desktop-imgs/header-desktop.svg')  no-repeat left top;
+    aspect-ratio: 6.2;
+  }
+
+  .footer-section {
+    background: url('/desktop-imgs/footer-result-desktop.svg') no-repeat center bottom;
+    aspect-ratio: 6.9;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

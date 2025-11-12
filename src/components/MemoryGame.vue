@@ -70,13 +70,13 @@ const cardsContainerRef = ref(null)
 const cardsGridRef = ref(null)
 
 
-// Computed properties
-const gridStyle = computed(() => {
-  const gridSize = gameConfig.gameSettings.gridSize
-  return {
-    gridTemplateColumns: `repeat(${gridSize}, 1fr)`,
-  }
-})
+// // Computed properties
+// const gridStyle = computed(() => {
+//   const gridSize = gameConfig.gameSettings.gridSize
+//   return {
+//     gridTemplateColumns: `repeat(${gridSize}, 1fr)`,
+//   }
+// })
 
 
 const initializeGame = () => {
@@ -353,6 +353,35 @@ onUnmounted(() => {
 }
 
 /* Responsividade */
+
+@media (min-width: 1300px) and (max-width: 2000px) {
+  .header-hero {
+    aspect-ratio: 5.8;
+    background: url('/desktop-imgs/header-desktop.svg') no-repeat left top;
+
+  }
+  .cards-grid {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1.19rem 1.37rem;
+  }
+
+  .timer-display {
+    font-size: 2.75rem;
+    padding: 0.5rem 1.37rem;
+    min-width: 10.625rem;
+    min-height: 4rem;
+  }
+
+  .timer-section{
+    margin-bottom: -10rem;
+    padding: 18px 0 0;
+  }
+
+  .game-board {
+    padding: 0;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .header-hero {
   background: url('/ipad-imgs/ipad-header-jogar.svg') no-repeat center top;

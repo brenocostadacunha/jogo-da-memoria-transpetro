@@ -6,6 +6,7 @@
 
     <!-- Content -->
     <div class="content-section">
+      <div class="title-desktop"></div>
       <p class="description">
         Você testará agora seus conhecimentos sobre a atuação da Transpetro como uma das maiores operadoras no segmento dutoviário do país. Transportamos petróleo e seus derivados, provendo soluções logísticas para o segmento de óleo, gás e produtos de baixo carbono, contribuindo para o desenvolvimento humano e social, de forma ética, justa, segura e competitiva.
       </p>
@@ -58,6 +59,10 @@ defineEmits(['start-game'])
   z-index: 5;
 }
 
+.title-desktop{
+  display: none;
+}
+
 
 .description {
   padding-inline: 5rem;
@@ -104,6 +109,45 @@ defineEmits(['start-game'])
 }
 
 /* Responsividades */
+
+@media (min-width: 1300px) and (max-width: 2000px) {
+  .header-section{
+    aspect-ratio: 5;
+    flex: 1 1 auto;
+    background: url('/desktop-imgs/header-desktop.svg')  no-repeat left top;
+  }
+
+  .content-section{
+    top: 0;
+    gap: 2rem;
+  }
+
+  .title-desktop{
+    display: block;
+    min-width: 438px ;
+    aspect-ratio: 7.7;
+    background: url('/desktop-imgs/memoria-na-faixa-desktop.svg') no-repeat center / contain;
+    margin-inline: auto;
+  }
+
+  .play-button{
+    margin-top: 1.5rem;
+    font-size: 2.7rem;
+
+  }
+
+
+  .footer-section{
+    aspect-ratio: 4;
+    background-image: url('/desktop-imgs/footer-desktop.svg');
+  }
+
+  .description{
+    padding-inline: 11rem;
+    font-size: 1.37rem;
+    line-height: 2rem;
+  }
+}
 
 /* Estilos para telas de tablet (como iPads) */
 @media (min-width: 768px) and (max-width: 1024px) {
