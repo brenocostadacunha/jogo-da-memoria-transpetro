@@ -36,10 +36,10 @@ const props = defineProps({
 const emit = defineEmits(['return-to-start'])
 
 onMounted(() => {
-  // Após 5 segundos, retornar para a página inicial
-//  setTimeout(() => {
-//     emit('return-to-start')
-//   }, 5000)
+//  Após 5 segundos, retornar para a página inicial
+ setTimeout(() => {
+    emit('return-to-start')
+  }, 5000)
 })
 </script>
 
