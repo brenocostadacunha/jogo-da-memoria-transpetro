@@ -4,8 +4,8 @@ import StartPage from './pages/StartPage.vue'
 import ResultPage from './pages/ResultPage.vue'
 import MemoryGame from './components/MemoryGame.vue'
 
-const currentPage = ref('result')
-const gameResult = ref(true)
+const currentPage = ref('start')
+const gameResult = ref(false)
 
 const startGame = () => {
   currentPage.value = 'game'
